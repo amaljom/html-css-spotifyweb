@@ -4,18 +4,190 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aquamarine;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(78, 78, 78);
 }
 .principale{
     width: 600px;
     display: flex;
     background-color: #141922;;
+    margin: 0 auto;
 }
+
+h1{
+    color: #fff;
+}
+h2{
+    color: #fff;
+}
+p{
+    color: rgb(194, 191, 191);
+}
+/******************************************
+SEZIONE DI SINISTRA
+*******************************************/
 .sinistra{
     background-color: black;
-    width: 60px;
+    width: 10%;
+    position: relative;
+    padding: 10px 10px;
 }
 .img-1{
     width: 40px;
-    padding: 0px 8px;
+    padding: 5px 8px;
+    filter: opacity(.7);
+}
+.img-profile{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-top: 10px;
+}
+.home{
+    min-height: 250px;
+    padding-top: 5px;
+}
+.utente{
+    position: absolute;
+    bottom: 0;
+}
+
+/******************************************
+SEZIONE DI DESTRA
+*******************************************/
+.destra{
+    width: 90%;
+    
+    height: 90vh;
+    overflow: auto;
+}
+.upgrade{
+    text-align: right;
+    padding: 30px 25px;
+    background-color: rgb(0 0 0 / 54%);
+    position: fixed;
+    width: 538px;
+    z-index: 1;
+}
+.upgrade-button{
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: solid 1px;
+    color: #fff;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ul li{
+    list-style: none;
+    width: calc(95% /4);
+    color: rgb(170, 165, 165);
+    font-size: 13px;
+    font-weight: 550;
+}
+li a{
+    text-decoration: none;
+    color: rgb(170, 165, 165);
+}
+.scritte{
+    margin-top: 90px;
+    padding: 0px 40px;
+}
+
+.playlist{
+    margin-top: 55px;
+    padding: 0px 40px;
+}
+.recently{
+    display: flex;
+    flex-wrap: wrap;
+}
+.song-list{
+    width: calc(100% / 2);
+    padding-top: 20px;
+    text-align: center;
+}
+.img-2{
+    width: 95%;
+}
+.special{
+    border-radius: 50%;
+
+}
+
+/******************************************
+FOOTER
+*******************************************/
+footer{
+    height: 10vh;
+    background-color: rgb(31, 29, 29);
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+.bottom-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding: 22px 20px;
+    color: #fff;
+}
+.bar-left{
+    display: flex;
+    align-items: center;
+    width: 28%;
+}
+.img-bar{
+    width: 50px;
+}
+.spazio{
+    font-size: 12px;
+    padding: 0px 16px;
+}
+.flexiamo{
+    display:flex;
+}
+.bar-center{
+    width: 40%;
+}
+.top{
+    text-align: center;
+}
+.misura{
+    font-size: 19px;
+    padding-right: 28px;
+}
+.misura-speciale{
+    font-size: 28px;
+}
+.bottom{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bar{
+    height: 3px;
+    background-color: lightgray;
+    width: 65%;
+}
+.bar-2{
+    height: 3px;
+    background-color: lightgray;
+    width: 50%;
+}
+.bar-right{
+    display: flex;
+    width: 28%;
+    align-items: center;
+    justify-content: space-around;
 }

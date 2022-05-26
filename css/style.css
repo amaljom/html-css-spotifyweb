@@ -11,10 +11,11 @@ body{
     background-color: rgb(78, 78, 78);
 }
 .principale{
-    width: 600px;
+    width: 100%;
     display: flex;
     background-color: #141922;;
     margin: 0 auto;
+    height: calc(100vh - 90px);
 }
 
 h1{
@@ -22,6 +23,7 @@ h1{
 }
 h2{
     color: #fff;
+    font-size: 15px;
 }
 p{
     color: rgb(194, 191, 191);
@@ -31,7 +33,7 @@ SEZIONE DI SINISTRA
 *******************************************/
 .sinistra{
     background-color: black;
-    width: 10%;
+    width: 60px;
     position: relative;
     padding: 10px 10px;
 }
@@ -39,6 +41,12 @@ SEZIONE DI SINISTRA
     width: 40px;
     padding: 5px 8px;
     filter: opacity(.7);
+}
+.logo-1{
+    display: inline;
+}
+.logo-2{
+    display: none;
 }
 .img-profile{
     width: 44px;
@@ -55,14 +63,26 @@ SEZIONE DI SINISTRA
     position: absolute;
     bottom: 0;
 }
+.svg-laterali{
+    display:flex;
+    align-items: center;
+}
+.svg-laterali p{
+    display: none;
+}
+.playlist-1{
+    display: none;
+}
+.downlo-span{
+    display: none;
+}
 
 /******************************************
 SEZIONE DI DESTRA
 *******************************************/
 .destra{
-    width: 90%;
-    
-    height: 90vh;
+    width: calc(100% - 60px);
+    height: calc(100vh - 90px);
     overflow: auto;
 }
 .upgrade{
@@ -70,7 +90,7 @@ SEZIONE DI DESTRA
     padding: 30px 25px;
     background-color: rgb(0 0 0 / 54%);
     position: fixed;
-    width: 538px;
+    width: calc(100% - 60px);
     z-index: 1;
 }
 .upgrade-button{
@@ -90,8 +110,9 @@ ul li{
     list-style: none;
     width: calc(95% /4);
     color: rgb(170, 165, 165);
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 550;
+    text-align: center;
 }
 li a{
     text-decoration: none;
@@ -99,12 +120,13 @@ li a{
 }
 .scritte{
     margin-top: 90px;
-    padding: 0px 40px;
+    padding: 0px 20px;
+    line-height: 40px;
 }
 
 .playlist{
     margin-top: 55px;
-    padding: 0px 40px;
+    padding: 0px 20px;
 }
 .recently{
     display: flex;
@@ -126,19 +148,16 @@ li a{
 /******************************************
 FOOTER
 *******************************************/
-footer{
-    height: 10vh;
-    background-color: rgb(31, 29, 29);
-    width: 600px;
-    margin: 0 auto;
-}
-
 
 .bottom-bar{
+    height: 90px;
+    background-color: rgb(31, 29, 29);
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    padding: 22px 20px;
+    padding: 15px 20px;
     color: #fff;
 }
 .bar-left{
@@ -173,21 +192,120 @@ footer{
     
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 .bar{
     height: 3px;
     background-color: lightgray;
     width: 65%;
+    margin: 8px;
 }
 .bar-2{
     height: 3px;
     background-color: lightgray;
     width: 50%;
+    margin-left: 5px;
 }
 .bar-right{
     display: flex;
     width: 28%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+}
+
+/******************************************
+                SCREEN S
+*******************************************/
+@media screen and (min-width: 601px){ 
+    .logo-1{
+        display: none;
+    }
+    
+    .principale{
+        width: 100%;
+    }
+    .sinistra{
+        width: 225px;
+    }
+    .destra{
+        width: calc(100% - 225px);
+        position: relative;
+    }
+    .upgrade{
+        width: calc(100% - 225px);
+    }
+    .bottom-bar{
+        width: 100%;
+    }
+    .img-1{
+        width: 45px;
+    }
+    .logo-2{
+        display: inline;
+        width: 130px;
+        filter: opacity(1);
+    }
+    .svg-laterali p{
+        display: inline;
+    }
+    .playlist-1{
+        display: inline-block;
+        padding-left: 10px;
+    }
+    .playlist-1 p{
+        padding-top: 5px;
+    }
+    .p-before{
+        display: flex;
+        align-items: center;
+    }
+    .p-before i{
+        color: gray;
+        font-size: 20px;
+        padding-right: 5px;
+    }
+
+    ul li{
+        width: calc(95% /3);
+    }
+    .downlo{
+        vertical-align: middle;
+    }
+    .downlo-span{
+        display: inline;
+        vertical-align: middle;
+        color: gray;
+    }
+    .icona-utente{
+        width: 200px;
+        border-top: solid 1px;
+          border-top-color: currentcolor;
+        border-color: white;
+        padding-left: 10px;
+      
+    }
+}
+
+@media screen and (min-width: 701px){
+    ul li {
+        width: calc(95% /5);
+    } 
+    .song-list {
+        width: calc(100% / 4);
+    }
+    .inline{
+        display: inline;
+    }
+}
+@media screen and (min-width: 1100px){
+    ul li {
+        width: calc(95% /6);
+    } 
+    .song-list {
+        width: calc(100% / 6);
+    }
+    .scritte{
+        padding: 0px 190px;
+    }
 }

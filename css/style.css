@@ -65,12 +65,18 @@ SEZIONE DI SINISTRA
     margin-top: 10px;
 }
 .home{
-    min-height: 250px;
-    padding-top: 5px;
+    height: calc( 100% - 95px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
 }
+
 .utente{
-    position: absolute;
-    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95px;
 }
 .svg-laterali{
     display:flex;
@@ -85,6 +91,10 @@ SEZIONE DI SINISTRA
 }
 .playlist-1{
     display: none;
+}
+.elenco{
+    height: calc(100vh - 189%);
+    overflow: auto;
 }
 .downlo-span{
     display: none;
@@ -384,7 +394,12 @@ FOOTER
     .jon-doe{
         display: inline;
     }
-    
+    .bar-left{
+        width: 159px;
+    }
+    .bar-right{
+        width: 160px;
+    }
     
 }
 

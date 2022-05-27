@@ -40,6 +40,7 @@ SEZIONE DI SINISTRA
     width: 60px;
     position: relative;
     padding: 10px 10px;
+    overflow: hidden;
 }
 .img-1{
     width: 40px;
@@ -94,7 +95,7 @@ SEZIONE DI SINISTRA
     display: none;
 }
 .elenco{
-    height: calc(100vh - 189%);
+    height: calc(50vh - 103px);
     overflow: auto;
 }
 .downlo-span{
